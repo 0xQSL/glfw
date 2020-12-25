@@ -45,6 +45,8 @@ static char* getDisplayName(CGDirectDisplayID displayID)
     io_service_t service;
     CFDictionaryRef info;
 
+    return NULL;
+
     if (IOServiceGetMatchingServices(kIOMasterPortDefault,
                                      IOServiceMatching("IODisplayConnect"),
                                      &it) != 0)
